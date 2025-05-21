@@ -1,32 +1,76 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My Custom Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arble</title>
   <style>
     body {
-      background: #222;
-      color: white;
-      font-family: sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin: 0;
+      text-align: center;
     }
 
-    input {
-      padding: 0.5em;
-      font-size: 1.2em;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: #00ffff;
+    }
+
+    form {
       width: 60%;
-      margin-top: 1em;
-      border-radius: 0.3em;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
       border: none;
+      font-size: 1.2rem;
+      outline: none;
+      background-color: #333;
+      color: white;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      border: none;
+      background-color: #00ffff;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00cccc;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>🌐 Arble</h1>
-  <input type="text" placeholder="Search or enter address...">
+  <h1>Arble</h1>
+  <form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Search with Arble..." autofocus>
+    <br />
+    <input type="submit" value="Search">
+  </form>
+
+  <footer>Created by Vahin 😎</footer>
 </body>
 </html>
